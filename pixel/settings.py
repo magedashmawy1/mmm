@@ -27,7 +27,7 @@ SECRET_KEY = 'ijg)ky4wk%%7&)9_w6nuzapw&fs6$ed=tm&7%j(3isu$tk30-k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.218.28.66']
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'almokawel.construction@gmail.com'
 EMAIL_HOST_PASSWORD = 'almokawel2020'
@@ -129,6 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 
 #EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
